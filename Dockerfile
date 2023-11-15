@@ -7,8 +7,7 @@ ENV PYTHONUNBUFFERED 1
 
 RUN pip install --upgrade pip
 
-COPY folder/docker_folder/requirements.txt ./
-# COPY .requirements.txt /usr/src/app/
+COPY ./requirements.txt /usr/src/app/
 RUN pip install -r requirements.txt
 
 #copy project
